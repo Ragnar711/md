@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <div className="w-full flex flex-col items-center justify-center">
-            <header className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+        <div className="w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
+            <header className="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen">
                 <div className="relative w-full h-full">
                     <Image
                         src="/bg.jpg"
@@ -14,8 +14,11 @@ const About = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
                 </div>
-                <div className="flex flex-col items-start justify-around bg-[#31464d] p-8 md:p-20 space-y-4 md:space-y-8">
-                    <h1 className="text-[2rem] md:text-[3rem] text-white flex flex-row items-center justify-between gap-5">
+                <div className="flex flex-col items-start justify-around bg-[#31464d] p-8 md:p-20 space-y-4 md:space-y-8 w-full">
+                    <h1
+                        className="text-white flex flex-row items-center gap-5 w-full"
+                        style={{ fontSize: "clamp(2rem, 2vw, 4rem)" }}
+                    >
                         <Image
                             src="/logo.png"
                             alt="about"
@@ -25,27 +28,37 @@ const About = () => {
                         />
                         MD Bâtiment Solutions
                     </h1>
-                    <p className="text-white font-bold text-[2rem] md:text-[5rem] leading-snug">
+                    <p
+                        className="text-white font-bold leading-snug w-full"
+                        style={{ fontSize: "clamp(2.5rem, 4vw, 5rem)" }}
+                    >
                         &quot;Transformez vos rêves en réalité avec MD Bâtiment
                         Solutions.&quot;
                     </p>
                     <a
                         href="#about"
-                        className="bg-[#556e76] text-white px-4 py-2 md:px-8 md:py-4 text-xl md:text-3xl rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:bg-[#2f5c6f] inline-block text-center"
+                        className="bg-[#556e76] text-white px-4 py-2 md:px-8 md:py-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:bg-[#2f5c6f] inline-block text-center w-1/2"
+                        style={{ fontSize: "clamp(1rem, 1.5vw, 2rem)" }}
                     >
                         Learn More
                     </a>
                 </div>
             </header>
             <main
-                className="h-screen w-full bg-[#eeeef0] flex flex-col items-start justify-around p-8 md:p-24"
+                className="min-h-screen w-full bg-[#eeeef0] flex flex-col items-start justify-around p-8 md:p-24 overflow-hidden"
                 id="about"
             >
-                <section className="flex flex-col space-y-4 md:space-y-8 w-full md:w-1/2 text-[2rem] md:text-[5rem] text-[#44575d] font-bold leading-tight p-4">
+                <section
+                    className="flex flex-col space-y-4 md:space-y-8 w-full md:w-2/3 text-[#44575d] font-bold leading-tight p-4"
+                    style={{ fontSize: "clamp(2.5rem, 5vw, 5rem)" }}
+                >
                     <hr className="border-[#44575d] border-4 w-1/2 mr-auto mb-4 md:mb-10" />
                     Un partenaire pour toutes vos solutions de construction !
                 </section>
-                <section className="flex flex-col space-y-4 md:space-y-8 ml-auto text-left w-full md:w-1/2 text-[1rem] md:text-[2rem] text-[#44575d] p-4">
+                <section
+                    className="flex flex-col space-y-4 md:space-y-8 ml-auto text-left w-full md:w-1/2 text-[#44575d] p-4"
+                    style={{ fontSize: "clamp(1rem, 2vw, 3rem)" }}
+                >
                     MD Bâtiment Solutions gère vos projets de construction de la
                     conception à la réalisation. Notre équipe dédiée garantit
                     des résultats de haute qualité, de l&apos;innovation et un
