@@ -15,7 +15,13 @@ const About = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
                 </div>
                 <div className="flex flex-col items-start justify-around bg-[#31464d] p-20 space-y-8">
-                    <h1 className="text-[3rem] text-white">
+                    <h1 className="text-[3rem] text-white flex flex-row items-center justify-between gap-5">
+                        <Image
+                            src="/logo.png"
+                            alt="about"
+                            width={80}
+                            height={80}
+                        />
                         MD Bâtiment Solutions
                     </h1>
                     <p className="text-white font-bold text-[5rem] leading-snug">
