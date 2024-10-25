@@ -85,7 +85,27 @@ const Services: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-full bg-[#002f69]"></div>
+            <div className="w-full h-full bg-[#002f69] flex flex-row items-center justify-around">
+                <div className="w-1/4 h-[70%] flex flex-col items-start justify-around">
+                    <h2
+                        className="font-bold mb-4 text-white"
+                        style={{ fontSize: "clamp(2rem, 2vw, 4rem)" }}
+                    >
+                        Our Services
+                    </h2>
+                    <article
+                        className="text-white mb-8"
+                        style={{ fontSize: "clamp(1rem, 2vw, 2rem)" }}
+                    >
+                        Write a paragraph that talks about your construction
+                        company here. Convince your prospective clients to
+                        choose you and your team for their construction needs by
+                        talking about your unique services, as well as your
+                        commitment to getting the job done.
+                    </article>
+                </div>
+                <div className="w-3/4 h-[70%] flex flex-row items-center justify-around"></div>
+            </div>
         </section>
     );
 };
