@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <div className="w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
+        <section className="w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
             <header className="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen">
                 <div className="relative w-full h-full">
                     <Image
@@ -44,7 +44,7 @@ const About = () => {
                     </a>
                 </div>
             </header>
-            <main
+            <section
                 className="min-h-screen w-full bg-[#eeeef0] flex flex-col items-start justify-around p-8 md:p-24 overflow-hidden"
                 id="about"
             >
@@ -64,8 +64,8 @@ const About = () => {
                     des résultats de haute qualité, de l&apos;innovation et un
                     engagement envers les délais.
                 </section>
-            </main>
-        </div>
+            </section>
+        </section>
     );
 };
 
