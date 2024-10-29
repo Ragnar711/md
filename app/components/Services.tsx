@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Services: React.FC = () => {
     return (
-        <section className="w-full h-screen">
+        <main className="w-full h-screen">
             <div className="w-full h-full flex flex-col items-center justify-around bg-[#31464d] p-4">
                 <header>
                     <h1
@@ -243,7 +245,67 @@ const Services: React.FC = () => {
                     </div>
                 </section>
             </section>
-        </section>
+            <section className="w-full h-screen flex flex-row items-center bg-[#002f69] justify-around">
+                <div className="w-1/2 h-[80%] flex flex-col items-start justify-around">
+                    <h2
+                        className="text-white flex flex-row items-center gap-5"
+                        style={{ fontSize: "clamp(1.5rem, 1.5vw, 3rem)" }}
+                    >
+                        <Image
+                            src="/logo.png"
+                            alt="about"
+                            width={30}
+                            height={30}
+                            className="md:w-20 md:h-20"
+                        />
+                        MD Bâtiment Solutions
+                    </h2>
+                    <div className="relative w-[70%] h-[80%] bg-gradient-to-b from-white via-white to-blue-600">
+                        <div className="absolute top-[10%] bottom-[10%] left-0 w-full h-[80%]">
+                            <Image
+                                src="/contact.jpg"
+                                alt="about"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="w-1/2 h-[75%] flex flex-col items-start justify-around">
+                    <h3 className="text-white font-bold text-5xl">
+                        Headquarters
+                    </h3>
+                    <p className="text-white text-xl">
+                        123 Anywhere St.
+                        <br /> Any City, ST 12345 Tel.
+                        <br />
+                        <br /> (123) 456-7890 <br />
+                        Email: hello@reallygreatsite.com
+                    </p>
+                    <br />
+                    <br />
+                    <h3 className="text-white font-bold text-4xl">
+                        Office Hours
+                    </h3>
+                    <p className="text-white text-xl">
+                        Monday to Friday
+                        <br /> 9:00 am to 5:00 pm
+                        <br />
+                        <br /> Weekends by appointment
+                    </p>
+                    <br />
+                    <br />
+                    <h3 className="text-white font-bold text-4xl">
+                        Social Media
+                    </h3>
+                    <div className="flex flex-row items-center gap-5">
+                        <FaFacebook color="white" size={40} />
+                        <AiFillTwitterCircle color="white" size={40} />
+                        <FaInstagram color="white" size={40} />
+                    </div>
+                </div>
+            </section>
+        </main>
     );
 };
 
