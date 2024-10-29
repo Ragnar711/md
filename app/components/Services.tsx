@@ -245,10 +245,10 @@ const Services: React.FC = () => {
                     </div>
                 </section>
             </section>
-            <section className="w-full h-screen flex flex-row items-center bg-[#002f69] justify-around">
-                <div className="w-1/2 h-[80%] flex flex-col items-start justify-around">
+            <section className="w-full h-screen flex flex-row items-center bg-[#002f69] gap-32">
+                <div className="w-1/2 h-[80%] flex flex-col items-end justify-around">
                     <h2
-                        className="text-white flex flex-row items-center gap-5"
+                        className="text-white flex flex-row items-center gap-5 mx-auto"
                         style={{ fontSize: "clamp(1.5rem, 1.5vw, 3rem)" }}
                     >
                         <Image
