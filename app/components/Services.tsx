@@ -35,7 +35,7 @@ const Services: React.FC = () => {
                     className="flex flex-row items-center justify-around space-x-4 font-bold w-full"
                     style={{ fontSize: "clamp(1rem, 1.5vw, 1.5rem)" }}
                 >
-                    <div className="w-80 h-80 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
+                    <div className="2xl:w-80 2xl:h-80 xl:w-40 xl:h-40 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
                         <div className="relative w-2/3 h-2/3 mb-2">
                             <Image
                                 src="/srv1.jpg"
@@ -44,11 +44,11 @@ const Services: React.FC = () => {
                                 objectFit="cover"
                             />
                         </div>
-                        <h2 className="text-center text-[#002f69]">
+                        <h2 className="text-center text-[#002f69] px-1">
                             ARCHITECTURE
                         </h2>
                     </div>
-                    <div className="w-80 h-80 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
+                    <div className="2xl:w-80 2xl:h-80 xl:w-40 xl:h-40 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
                         <div className="relative w-2/3 h-2/3 mb-2">
                             <Image
                                 src="/srv2.jpg"
@@ -57,9 +57,11 @@ const Services: React.FC = () => {
                                 objectFit="cover"
                             />
                         </div>
-                        <h2 className="text-center text-[#002f69]">Béton</h2>
+                        <h2 className="text-center text-[#002f69] px-1">
+                            Béton
+                        </h2>
                     </div>
-                    <div className="w-80 h-80 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
+                    <div className="2xl:w-80 2xl:h-80 xl:w-40 xl:h-40 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
                         <div className="relative w-2/3 h-2/3 mb-2">
                             <Image
                                 src="/srv3.jpg"
@@ -68,11 +70,11 @@ const Services: React.FC = () => {
                                 objectFit="cover"
                             />
                         </div>
-                        <h2 className="text-center text-[#002f69]">
+                        <h2 className="text-center text-[#002f69] px-1">
                             ÉTUDES ET CONCEPTION DE FLUIDES
                         </h2>
                     </div>
-                    <div className="w-80 h-80 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
+                    <div className="2xl:w-80 2xl:h-80 xl:w-40 xl:h-40 bg-[#eeeef0] flex flex-col items-center justify-center shadow-md">
                         <div className="relative w-2/3 h-2/3 mb-2">
                             <Image
                                 src="/srv4.jpg"
@@ -81,7 +83,7 @@ const Services: React.FC = () => {
                                 objectFit="cover"
                             />
                         </div>
-                        <h2 className="text-center text-[#002f69]">
+                        <h2 className="text-center text-[#002f69] px-1">
                             ÉLECTRICITÉ
                         </h2>
                     </div>
